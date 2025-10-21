@@ -263,8 +263,9 @@ export interface UnitParamsMap {
 
   [UnitType.City]: Record<string, never>;
 
-  [UnitType.MIRV]: Record<string, never>;
-
+  [UnitType.MIRV]: {
+    targetTile?: number;
+  };
   [UnitType.MIRVWarhead]: {
     targetTile?: number;
   };
